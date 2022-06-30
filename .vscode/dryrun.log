@@ -1,0 +1,9 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory 'd:/Downloads/HashTable-main/HashTable-main'
+mkdir -p ./build/
+mkdir -p ./build/objects
+ 
+mkdir -p build/
+gcc -Wall -Wextra -Werror -Iinclude/ -lstdc++ -lm -o ./build//app src/hash.c src/main.c
+make: Leaving directory 'd:/Downloads/HashTable-main/HashTable-main'
+ 
