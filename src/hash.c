@@ -37,14 +37,9 @@ int getValue(HashTable *h, int key){
 void Insert(HashTable *h, int key, int value){
 	int idx = hash(key, h->M);
 	int aux = idx;
-	// int aux2;
 	
 	while (h->table[idx].key != -1){
-		// aux2 = idx;
 		idx = hash2(key, idx, h->M);
-		// if (aux2 == idx){
-		// 	idx = hash((idx+1),h->M);
-		// }
 		if (idx == aux){
 			printf("OPENED HASH IS FULL!\n");
 			return;
