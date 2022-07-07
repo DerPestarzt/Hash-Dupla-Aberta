@@ -34,11 +34,12 @@ int getValue(HashTable *h, int key){
 	return h->table[idx].value;
 }
 
-void Insert(HashTable *h, int key, int value){
+void Insert(HashTable *h, int key, int value, int *cont){
 	int idx = hash(key, h->M);
 	int aux = idx;
 	
 	while (h->table[idx].key != -1){
+		(*cont)++;
 		idx = hash2(key, idx, h->M);
 		if (idx == aux){
 			printf("OPENED HASH IS FULL!\n");
