@@ -26,6 +26,6 @@ struct HashTable{
 void Initialize(HashTable *h, int M);
 void Imprime(HashTable *h);
 int getValue(HashTable *h, int key);
-void Insert(HashTable *h, int key, int value);
+void Insert(HashTable *h, int key, int value, int *cont);
 
 #endif
