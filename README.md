@@ -10,7 +10,7 @@ Implementação de duas tabelas hash: i) endereçamento fechado e; ii) endereça
 
 <h1>Implementação </h1>
 <h2>Funções</h2>
-Para a implementação foram desenvolvidas as funções <code>Initialize</code>, <code>Imprime</code> e <code>Insert</code>  <code>Initialize</code>.
+Para a implementação foram desenvolvidas as funções <code>Initialize</code>, <code>Imprime</code> e <code>Insert</code>.
 <h2>Initialize</h2>
 A função <code>Initialize</code> é implementada para criar a lista que será utilizada para hash, setar (-1) para todas as posições definindo que elas estão sem chaves e zerando o seu valor.
 <ul>
